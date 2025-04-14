@@ -97,3 +97,15 @@ body{
 .btn:disabled{
     background-color: var(--line-border-empty);
 }
+.icon{
+    color: black;
+    width: 5%;
+    height: 5%;
+    margin-left: 0px;
+    margin-right: 50px;
+    left: 0;
+    top: 0;
+}
+a{
+    text-decoration: none;
+}
