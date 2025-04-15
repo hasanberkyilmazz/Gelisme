@@ -2,8 +2,10 @@
  const circles = document.querySelectorAll(".circle");
  const prev = document.getElementById("prev");
  const next = document.getElementById("next");
+ const anasayfa = document.getElementById("anasayfa");
+
  
- alert("Hoşgeldinn")
+ 
  let currentActive = 1;
  
  next.addEventListener("click", () => {
@@ -46,10 +48,26 @@
 
      if(currentActive === 1 ){
         prev.disabled = true;
-     } else if (currentActive === circles.length){
-        next.disabled = true;
-     } else { 
+     }
+     
+     else if(currentActive === 3){
+        next.style.display = "inline-block";
+        anasayfa.style.display = "none";
+     } 
+     
+     else if (currentActive === 4){
+        anasayfa.style.display = "inline-block"; 
+        next.style.display = "none";
+        
+     }
+     
+     else { 
         prev.disabled = false;
         next.disabled = false;
      }
     }
+
+
+    
+
+
