@@ -11,7 +11,7 @@ const button = document.querySelector('.ripple')
  
    const xInside = clientX - buttonLeft
    const yInside = clientY - buttonTop
-//    console.log(`xInside: ${xInside}, yInside: ${yInside}`)
+   console.log(`xInside: ${xInside}, yInside: ${yInside}`)
 
    const circle = document.createElement('span')
    circle.classList.add('circle')
@@ -19,4 +19,6 @@ const button = document.querySelector('.ripple')
    circle.style.left = xInside + 'px'
 
    button.appendChild(circle)
+
+   setTimeout(() => circle.remove() , 500)
  })
